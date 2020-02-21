@@ -1,0 +1,8 @@
+C:\Users\sfzin\OneDrive\Desktop\EditDNS\EditDNS\bin\Debug\EditDNS.exe.config
+C:\Users\sfzin\OneDrive\Desktop\EditDNS\EditDNS\bin\Debug\EditDNS.exe
+C:\Users\sfzin\OneDrive\Desktop\EditDNS\EditDNS\bin\Debug\EditDNS.pdb
+C:\Users\sfzin\OneDrive\Desktop\EditDNS\EditDNS\obj\Debug\EditDNS.Form1.resources
+C:\Users\sfzin\OneDrive\Desktop\EditDNS\EditDNS\obj\Debug\EditDNS.Properties.Resources.resources
+C:\Users\sfzin\OneDrive\Desktop\EditDNS\EditDNS\obj\Debug\EditDNS.csproj.GenerateResource.cache
+C:\Users\sfzin\OneDrive\Desktop\EditDNS\EditDNS\obj\Debug\EditDNS.exe
+C:\Users\sfzin\OneDrive\Desktop\EditDNS\EditDNS\obj\Debug\EditDNS.pdb
