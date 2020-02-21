@@ -64,7 +64,6 @@ namespace EditDNS
                 IPAddressCollection dnsServers = adapterProperties.DnsAddresses;
                 if (dnsServers.Count > 0)
                 {
-                    Console.WriteLine(item.Description);
                     foreach (IPAddress dns in dnsServers)
                     {
                         if (dns.ToString() != "52.77.28.202")
@@ -101,7 +100,28 @@ namespace EditDNS
 
         private void Close(object sender, FormClosedEventArgs e)
         {
+            if (button1.Enabled == false)
+            {
+                var List_name = GetNicList1();
+                int count = List_name.Count;
+                for (int i = 0; i < count; i++)
+                {
+                    this.ExecuteAsAdmin("interface ip set dns " + List_name[i] + " dhcp");
+                }
+            }
+        }
 
+        private void Close_ing(object sender, FormClosingEventArgs e)
+        {
+            if (button1.Enabled == true)
+            {
+                var List_name = GetNicList1();
+                int count = List_name.Count;
+                for (int i = 0; i < count; i++)
+                {
+                    this.ExecuteAsAdmin("interface ip set dns " + List_name[i] + " dhcp");
+                }
+            }
         }
     }
 }
