@@ -6,3 +6,11 @@ C:\Users\sfzin\OneDrive\Desktop\EditDNS\EditDNS\obj\Debug\EditDNS.Properties.Res
 C:\Users\sfzin\OneDrive\Desktop\EditDNS\EditDNS\obj\Debug\EditDNS.csproj.GenerateResource.cache
 C:\Users\sfzin\OneDrive\Desktop\EditDNS\EditDNS\obj\Debug\EditDNS.exe
 C:\Users\sfzin\OneDrive\Desktop\EditDNS\EditDNS\obj\Debug\EditDNS.pdb
+E:\GitHub\EditDNS\DNS_VSM\EditDNS\bin\Debug\EditDNS.exe.config
+E:\GitHub\EditDNS\DNS_VSM\EditDNS\bin\Debug\EditDNS.exe
+E:\GitHub\EditDNS\DNS_VSM\EditDNS\bin\Debug\EditDNS.pdb
+E:\GitHub\EditDNS\DNS_VSM\EditDNS\obj\Debug\EditDNS.Form1.resources
+E:\GitHub\EditDNS\DNS_VSM\EditDNS\obj\Debug\EditDNS.Properties.Resources.resources
+E:\GitHub\EditDNS\DNS_VSM\EditDNS\obj\Debug\EditDNS.csproj.GenerateResource.cache
+E:\GitHub\EditDNS\DNS_VSM\EditDNS\obj\Debug\EditDNS.exe
+E:\GitHub\EditDNS\DNS_VSM\EditDNS\obj\Debug\EditDNS.pdb
