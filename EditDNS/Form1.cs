@@ -57,26 +57,39 @@ namespace EditDNS
 
             //    this.ExecuteAsAdmin("interface ip set dns "+List_name[i]+ " static 52.77.28.202");
             //}
-            foreach (NetworkInterface item in List_name)
+            
+            try
             {
-                var Ip_DNS = item.NetworkInterfaceType;
-                IPInterfaceProperties adapterProperties = item.GetIPProperties();
-                IPAddressCollection dnsServers = adapterProperties.DnsAddresses;
-                if (dnsServers.Count > 0)
+                var url = "https://vesimang.org/dns/dns.txt";
+                var IP_From_URL = (new WebClient()).DownloadString(url);
+                foreach (NetworkInterface item in List_name)
                 {
-                    foreach (IPAddress dns in dnsServers)
+
+                    var Ip_DNS = item.NetworkInterfaceType;
+                    IPInterfaceProperties adapterProperties = item.GetIPProperties();
+                    IPAddressCollection dnsServers = adapterProperties.DnsAddresses;
+                    if (dnsServers.Count > 0)
                     {
-                        if (dns.ToString() != "52.77.28.202")
+                        foreach (IPAddress dns in dnsServers)
                         {
-                            this.ExecuteAsAdmin("interface ip set dns " + item.Name + " static 52.77.28.202");
+                            if (dns.ToString() != IP_From_URL)
+                            {
+                                this.ExecuteAsAdmin("interface ip set dns " + item.Name + " static "+IP_From_URL);
+                            }
                         }
                     }
                 }
+                this.Start_active = true;
+                button2.Enabled = true;
+                button1.Enabled = false;
+                label1.Text = "Kích hoạt thành công.";
             }
-            this.Start_active = true;
-            button2.Enabled = true;
-            button1.Enabled = false;
-            label1.Text = "Kích hoạt thành công.";
+            catch (Exception)
+            {
+                label1.Text = "Kích hoạt không thành công.";
+            }
+
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -122,6 +135,11 @@ namespace EditDNS
                     this.ExecuteAsAdmin("interface ip set dns " + List_name[i] + " dhcp");
                 }
             }
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

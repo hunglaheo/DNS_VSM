@@ -14,3 +14,4 @@ E:\GitHub\EditDNS\DNS_VSM\EditDNS\obj\Debug\EditDNS.Properties.Resources.resourc
 E:\GitHub\EditDNS\DNS_VSM\EditDNS\obj\Debug\EditDNS.csproj.GenerateResource.cache
 E:\GitHub\EditDNS\DNS_VSM\EditDNS\obj\Debug\EditDNS.exe
 E:\GitHub\EditDNS\DNS_VSM\EditDNS\obj\Debug\EditDNS.pdb
+E:\GitHub\EditDNS\DNS_VSM\EditDNS\obj\Debug\EditDNS.csprojAssemblyReference.cache
